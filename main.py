@@ -1,6 +1,8 @@
 import pandas as pd
+
 data = pd.read_csv('worldcities.csv')
-cities = data.city
+cities = list(data.city_ascii)
 print(cities)
-if "Wroclaw" in cities:
+
+if "Tokyo" in cities:
     print('hurra')
